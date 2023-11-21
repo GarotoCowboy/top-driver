@@ -1,0 +1,99 @@
+:root{
+    --preto:#090f13;
+    --azul:#171f25;
+    --vermelhoClaro:#752e2b;
+    --vermelho:#c90a02;
+    --branco: #f2eab7;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+/*Ele modifica o container login para aparecer a tela de login
+numa camada acima do header e do body
+fazendo o fundo ficar transparente.
+quando o botão login não é clicado ele fica com o top de -105%*/
+.containerLogin{
+  position: fixed;
+  top: -105%; left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+/*Quando o botão de login é clicado o top do containerLogin passa a ser 0*/
+.containerLogin.active{
+    top: 0;
+    opacity: 1;
+
+}
+
+.containerLogin form{
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    border: var(--border);
+    text-align: center;
+    width: 40rem;
+}
+
+.containerLogin form .botoes{
+   display: flex;
+   align-items: center;
+   gap: 1rem; 
+}
+
+.containerLogin form .botoes .btn{
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+
+
+}
+
+.containerLogin form h3{
+    color: var(--azul);
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.containerLogin form .box{
+    margin: .7rem 0;
+    width: 100%;
+    text-transform: none;
+    color: var(--azul);
+    padding:1rem 1.2rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+}
+
+.containerLogin form p{
+    padding: 1rem 0;
+    font: 1.5rem;
+    color: var(--vermelhoClaro);
+}
+
+.containerLogin form p a{
+    color: var(--vermelho);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.containerLogin #fechar-form-login{
+position: absolute;
+top: 1.5rem; right: 2.5rem;
+font-size: 3rem;
+color: var(--preto);
+cursor: pointer;
+}
+
+.containerLogin.active{
+    top: 0;
+    opacity: 1;
+
+}

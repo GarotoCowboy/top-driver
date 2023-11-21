@@ -1,0 +1,63 @@
+:root{
+    --preto:#090f13;
+    --azul:#171f25;
+    --vermelhoClaro:#752e2b;
+    --vermelho:#c90a02;
+    --branco: #f2eab7;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.noticias{
+    padding: 6rem 2rem;
+    text-align: center;
+    background: url(../../../assets/images/noticiasbg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.noticias h3{
+    color: var(--preto);
+    font-size: 3rem;
+}
+.noticias p{
+    color: var(--vermelhoClaro);
+    font-size:1.5rem;
+    padding: 1rem 0;
+}
+.noticias form{
+margin: 1rem auto;
+max-width: 60rem;
+height: 5rem;
+display: flex;
+box-shadow: var(--box-shadow);
+overflow: hidden;
+border-radius: 5rem;
+
+}
+
+.noticias form input[type='email']{
+height: 100%;
+width: 100%;
+font-size: 1.6rem;
+color: var(--preto);
+text-transform: none;
+padding: 0 2rem;
+
+}
+
+.noticias form input[type='submit']{
+    height: 100%;
+    width: 17rem;
+    font-size: 1.8rem;
+    color: var(--preto);
+    background: var(--vermelho);
+    cursor: pointer;
+    
+}
+
+
+.noticias form input[type='submit']:hover{
+    background: var(--vermelhoClaro);
+    
+}

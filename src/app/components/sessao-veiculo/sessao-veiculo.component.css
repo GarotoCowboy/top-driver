@@ -1,0 +1,111 @@
+:root{
+    --preto:#090f13;
+    --azul:#171f25;
+    --vermelhoClaro:#752e2b;
+    --vermelho:#c90a02;
+    --branco: #f2eab7;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+}
+
+.cabecalho{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 4.5rem;
+    color: var(--preto);
+}
+
+.cabecalho span{
+    position: relative;
+    z-index: 0;
+}
+
+.cabecalho span::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: var(--vermelhoClaro);
+    clip-path: polygon(0 90%,100% 80%, 100% 100%, 0 100%);
+}
+
+.veiculos .slide-veiculo{
+padding-bottom: 5rem;
+}
+
+.veiculos .slide-veiculo .box{
+text-align: center;
+width: 34rem;
+}
+
+.veiculos .slide-veiculo .box img{
+width: 100%;
+ opacity: .5;
+transform: scale(.8); 
+}
+
+.veiculos .slide-veiculo .swiper-slide-active img{
+    opacity: 1;
+    transform: scale(1); 
+}
+
+.veiculos .slide-veiculo .box .conteudo{
+    /* opacity: 0; */
+     transform: scale(0); 
+    padding-top: 1rem;
+    
+    }
+
+.veiculos .slide-veiculo .swiper-slide-active .conteudo{
+transform: scale(1);
+
+}
+
+.veiculos .slide-veiculo .box .conteudo h3{
+    /* opacity: 0; */
+   font-size: 3rem;
+   color: var(--preto);
+
+    }
+
+.veiculos .slide-veiculo .box .conteudo .preco{
+        /* opacity: 0; */
+       font-size: 3rem;
+       color: var(--vermelhoClaro);
+       padding: 1rem 0;
+       font-weight:bolder ;
+    
+        }
+
+.veiculos .slide-veiculo .box .conteudo span{
+            /* opacity: 0; */
+           font-size: 1.3rem;
+           color: var(--vermelho);
+           padding: .9rem 0;
+           font-weight:bolder ;
+        
+            }
+.veiculos .slide-veiculo .box .conteudo p{
+font-size: 1.5rem;
+padding: 1rem;
+padding-top: 1.5rem;
+border-top: var(--border);
+color: var(--vermelhoClaro);
+
+}
+
+.veiculos .slide-veiculo .box .conteudo p span{
+    color: var(--vermelho);
+    font-size: .8rem;
+    padding: 0 .5rem;
+    
+}
+
+
+
+.swiper-pagination-bullet-active{
+    background-color: var(--vermelho);
+}

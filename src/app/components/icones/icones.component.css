@@ -1,0 +1,68 @@
+:root{
+    --preto:#090f13;
+    --azul:#171f25;
+    --vermelhoClaro:#752e2b;
+    --vermelho:#c90a02;
+    --branco: #f2eab7;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.container-icones{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    gap: 1.5rem;
+    background: #eee;
+}
+
+.container-icones .icones{
+display: flex;
+align-items: center;
+gap: 1.5rem;
+padding: 2rem;
+background: #fff;
+box-shadow: var(--box-shadow);
+border-radius: 1rem;
+}
+
+.container-icones .icones i {
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    background-color: #eee;
+    color: var(--preto);
+    text-align: center;
+}
+
+.container-icones .icones .conteudo h3{
+    color: var(--vermelhoClaro);
+    font-size: 2.5rem;
+
+}
+
+.container-icones .icones .conteudo p{
+    color: var(--azul);
+    font-size: 1.5rem;
+    
+}
+
+.container-icones .icones:hover{
+    background: var(--preto);
+}
+
+.container-icones .icones:hover i{
+    background: var(--vermelhoClaro);
+}
+
+.container-icones .icones:hover .conteudo h3{
+    color: #fff;
+}
+
+.container-icones .icones:hover .conteudo p{
+    color: #eee;
+}

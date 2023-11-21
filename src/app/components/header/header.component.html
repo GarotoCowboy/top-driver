@@ -1,0 +1,19 @@
+<header  class="header">
+
+    <div  id="menu-btn"  (click)="click()"  class="fas fa-bars"></div>
+    
+        <a routerLink="/pagina-inicial" class="logo"><span>top</span>driver</a>
+    
+            <nav  class="navbar">
+                <a routerLink="/pagina-inicial">inicio</a><!--Adicionar as rotas-->
+                <a routerLink="nossos-veiculos">veiculos</a><!--Adicionar as rotas-->
+                <a routerLink="servicos">serviços</a><!--Adicionar as rotas-->
+                <a routerLink="avaliacoes">avaliações</a><!--Adicionar as rotas-->
+                <a href="https://garotocowboy.github.io">atividades</a><!--Adicionar as rotas-->
+            </nav>
+    
+            <div (click)="abrirTelaLogin()"  id="login-btn">
+                <button class="btn">login</button>
+                <i class="far fa-user"></i>
+            </div>
+    </header>
